@@ -1,0 +1,12 @@
+
+
+  <ul>
+    <li *ngIf="myarr; then templ1 else templ2">
+        {{myarr[0]}}
+    </li>
+  </ul>
+  <ng-template #templ1>Cool, you are right </ng-template>
+  <ng-template #templ2>Cool, you are right </ng-template>
+  <button (click)="printmyname()">Print name</button>
+
+  <p [class.title]="status"> ITS TITLE CLASS</p>
